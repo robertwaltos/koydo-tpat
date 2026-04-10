@@ -1,0 +1,45 @@
+// TPAT Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM081",
+  slug: "tpat",
+  name: "TPAT",
+  fullName: "Thai Professional Aptitude Tests",
+  alias: "Thai Professional Aptitude Tests",
+  family: "TCAS",
+  category: "Admissions",
+  subcategory: "University admissions",
+  country: "Thailand",
+  region: "Southeast Asia",
+  languages: ["Thai"],
+  estimatedAnnualTakers: "varies",
+  testingWindow: "Dec-Jan",
+  schedulePattern: "Annual",
+  ageGroup: "16-20",
+  targetUser: "Secondary student",
+  delivery: "Paper/computer mix",
+  questionTypes: ["Objective + practical by track"],
+  adaptivity: "Linear",
+  sections: "Professional track-specific",
+  scoringMode: "Score-based",
+  essayOrSpeaking: "Varies",
+  ipRisk: "Low",
+  contentReuse: "professional_aptitude",
+  uiEngine: "subject_specific_mixed_mode",
+  monetizationPotential: "Low",
+  tier: "Tier 5",
+  launchWave: "Wave 7",
+  themeColor: "#1E40AF",
+  themeColorDark: "#1E3A8A",
+  localizationComplexity: "High",
+  offlineNeeded: false,
+  mobileFirst: false,
+  locale: "th",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
